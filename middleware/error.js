@@ -9,7 +9,7 @@ console.log(err);
 
 //Mongoose bad ObjectId
 if(err.name === 'CastError') {
-    const message = `Bootcamp not found with id of ${err.value}`;
+    const message = `Resourse not found`;
     error = new ErrorResponse(message, 404);
 }
 
